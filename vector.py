@@ -44,12 +44,7 @@ class Vector():
         return self.unit_vector
     def invert(self):
         """reverses the direction of the vector"""
-        self.x = -1 * self.x
-        self.y = -1 * self.y
-        self.z = -1 * self.z
-        self.x_unit = -1 * self.x_unit
-        self.y_unit = -1 * self.x_unit
-        self.z_unit = -1 * self.x_unit
+        self = self * -1
         return self
     def copy(self):
         return Vector(self.x, self.y, self.z)
