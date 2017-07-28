@@ -55,6 +55,16 @@ def in_to_m(inch):
     # print("{}m".format(m))
     return m
 
+def in_to_mm(inch):
+    mm = 304.8 * inch / 12
+    # print("{}mm".format(mm))
+    return mm
+
+def in_to_cm(inch):
+    cm = 30.48 * inch / 12
+    # print("{}cm".format(cm))
+    return cm
+
 def in_to_ft(inch):
     ft = inch / 12
     # print("{}'".format(ft))
